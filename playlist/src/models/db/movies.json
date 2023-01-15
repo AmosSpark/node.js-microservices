@@ -1,0 +1,42 @@
+[
+  {
+    "genre": "Comedy",
+    "star": 4.5
+  },
+  {
+    "genre": "Action",
+    "star": 5
+  },
+  {
+    "genre": "Animation",
+    "star": 4.9
+  },
+  {
+    "genre": "Drama",
+    "star": 4.4
+  },
+  {
+    "genre": "Crime",
+    "star": 4.7
+  },
+  {
+    "genre": "Musical",
+    "star": 4.6
+  },
+  {
+    "genre": "Horor",
+    "star": 4.2
+  },
+  {
+    "genre": "Adventure",
+    "star": 4.1
+  },
+  {
+    "genre": "Fantasy",
+    "star": 4.6
+  },
+  {
+    "genre": "Thriller",
+    "star": 4.0
+  }
+]

@@ -1,0 +1,6 @@
+gateway/node_modules/
+movies/node_modules/
+playlist/node_modules/
+gateway/.env
+movies/.env
+playlist/.env
