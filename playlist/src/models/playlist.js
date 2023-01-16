@@ -14,9 +14,9 @@ const playlistSchema = new mongoose.Schema({
     {
       movie_id: {
         type: Schema.Types.ObjectId,
-        ref: "Movie",
-        required: true,
       },
+      genre: String,
+      star: Number,
     },
   ],
 });
