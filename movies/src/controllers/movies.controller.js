@@ -52,6 +52,31 @@ const controller = {
       console.log(error);
     }
   },
+
+  async updateMovie(req, res) {
+    try {
+      const movie_id = req.params.movieId;
+
+      const movie = await Movie.findByIdAndUpdate(movie_id, req.body, {
+        new: true,
+      });
+
+      if (!movie) throw new Error(`Movie not found.`);
+
+      const count = await Movie.find().count({
+        _id: movie_id,
+      });
+
+      res.status(200).json({
+        status_code: 200,
+        result: count,
+        message: `Movie updated.`,
+        data: movie,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  },
 };
 
 module.exports = controller;
