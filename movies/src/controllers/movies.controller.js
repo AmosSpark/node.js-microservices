@@ -1,3 +1,5 @@
+const producer = require("../../producer");
+
 const Movie = require("../models/movie");
 
 const fs = require("fs");
@@ -66,6 +68,9 @@ const controller = {
       const count = await Movie.find().count({
         _id: movie_id,
       });
+
+      // Send a message to the second microservice with the updated movie
+      await producer.sendMessageToBroker(movie);
 
       res.status(200).json({
         status_code: 200,

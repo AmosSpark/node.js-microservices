@@ -1,7 +1,12 @@
 const Playlist = require("../models/playlist");
 
+const consumer = require("../../consumer");
+
 const axios = require("axios");
+
 require("dotenv").config();
+
+consumer.listen();
 
 const movies_host = String(process.env.movies_host);
 
